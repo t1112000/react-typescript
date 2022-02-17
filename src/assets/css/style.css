@@ -1,0 +1,121 @@
+/* Styles Home Page */
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+
+.home-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  box-shadow: 0px 4px 18px rgba(146, 116, 114, 0.15);
+  border-radius: 8px;
+}
+
+.home-item__item span:first-child {
+  padding: 0.8rem 1.4rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  color: #ef4638;
+  background: rgba(239, 70, 56, 0.12);
+  font-weight: bold;
+}
+
+.home-item__item span:last-child {
+  margin-left: 12px;
+  color: #636271;
+  font-weight: bold;
+}
+
+/* Styles Todo List */
+.todolist-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  padding: 8px;
+  gap: 0 8px;
+  height: 37px;
+  margin: 12px 0;
+}
+
+.todolist-form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+.todolist-form button {
+  font-weight: bold;
+  color: #ef4638;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.todolist-task__title {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.todolist-task__title span {
+  margin: 0 0.4rem;
+}
+
+.todolist-task__list {
+  list-style-type: disc;
+}
+
+.todolist-task__item {
+  cursor: pointer;
+  margin: 0.8rem 0 0 2rem;
+  color: #000000;
+  font-weight: 400;
+  user-select: none;
+}
+
+.todolist-task__item.completed {
+  text-decoration: line-through;
+}
+/* Styles Country List */
+
+.countrylist-form {
+  display: flex;
+  align-items: center;
+  border: 0.1rem solid #efefef;
+  border-radius: 8px;
+  padding: 0.8rem;
+  gap: 0 0.8rem;
+  height: 3.7rem;
+  margin: 1.2rem 0;
+}
+
+.countrylist-form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+.countrylist-add svg {
+  transform: rotate(180deg);
+}
+
+.countrylist-item__loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.countrylist-item {
+  font-weight: bold;
+  padding: 1.5rem;
+  margin: 0 -1.5rem;
+  border-bottom: 1px solid #eaeaea;
+}
